@@ -61,6 +61,14 @@ Add it in your root build.gradle at the end of repositories:
   
 Step 2. Add the dependency
 
+### gradle
+
+	dependencies {
+	        compile 'com.github.coderJohnZhang:TvDialog:v1.0.1'
+	}
+	
+### maven
+
 	<dependency>
 	    <groupId>com.github.coderJohnZhang</groupId>
 	    <artifactId>TvDialog</artifactId>
