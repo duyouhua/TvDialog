@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.tcl.john.dialog.utils.FontUtil"/>
+
+    </data>
+
+    <TextView
+        android:id="@+id/remind_text"
+        android:layout_width="540dp"
+        android:layout_height="250dp"
+        android:background="@mipmap/move_to_frame"
+        android:drawableLeft="@mipmap/info_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:typeface="@{@string/notosanscjksc_light}"/>
+
+</layout>

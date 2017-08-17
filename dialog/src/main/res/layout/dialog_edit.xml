@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.tcl.john.dialog.utils.FontUtil"/>
+        <variable
+            name="value"
+            type="com.tcl.john.dialog.widget.EditDialog.Value"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="755px"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/dialog_edit_bg_4">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="663px"
+            android:layout_height="73px"
+            android:gravity="center_vertical"
+            android:text="@{value.mTitle}"
+            android:textSize="30px"
+            android:typeface="@{@string/notosanscjksc_light}"
+            android:textColor="@color/white"
+            tools:text="Change the name of your USB HDD"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="46px"
+            android:layout_marginEnd="46px" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="755px"
+            android:layout_height="1px"
+            android:background="@mipmap/dialog_edit_divider"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="601px"
+            android:layout_height="150px"
+            android:text="@{value.mContent}"
+            android:textSize="30px"
+            android:typeface="@{@string/notosanscjksc_light}"
+            android:textColor="@color/white"
+            android:layout_marginTop="47px"
+            android:gravity="center_vertical"
+            tools:text="Enter the display name of your HDD and press the confirm button. You can enter up to 24 characters."
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:layout_marginStart="77px"
+            android:layout_marginEnd="77px" />
+
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="495px"
+            android:layout_height="70px"
+            android:paddingLeft="20px"
+            android:maxLines="1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_tv"
+            android:background="@drawable/dialog_edit_selector"
+            android:textCursorDrawable="@drawable/et_cursor"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dialog_hint"
+            android:nextFocusDown="@+id/confirm_tv"
+            android:layout_marginTop="56px"
+            android:layout_marginStart="130px"
+            android:layout_marginEnd="130px" />
+
+        <TextView
+            android:id="@+id/confirm_tv"
+            android:layout_width="377px"
+            android:layout_height="95px"
+            android:layout_marginTop="56px"
+            android:typeface="@{@string/notosanscjksc_light}"
+            android:gravity="center"
+            android:background="@drawable/dialog_btn_selector"
+            android:nextFocusRight="@+id/cancel_tv"
+            android:text="@{value.mPositiveName}"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toBottomOf="@+id/content_et"
+            app:layout_constraintRight_toLeftOf="@+id/space" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/content_et"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="377px"
+            android:layout_height="95px"
+            android:gravity="center"
+            android:typeface="@{@string/notosanscjksc_light}"
+            android:background="@drawable/dialog_btn_selector"
+            android:nextFocusLeft="@+id/confirm_tv"
+            android:text="@{value.mNegativeName}"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/confirm_tv"
+            app:layout_constraintLeft_toRightOf="@+id/space" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

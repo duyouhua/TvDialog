@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TvDialog</string>
+
+    <string name="usb_name_edit_title">Change the name of your USB HDD</string>
+    <string name="usb_name_edit_content">Enter the display name of your HDD and press the confirm button. You can enter up to 24 characters.</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_no">No</string>
+    <string name="tip_msg">No available source</string>
+</resources>

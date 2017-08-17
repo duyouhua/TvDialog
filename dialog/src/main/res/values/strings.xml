@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dialog</string>
+
+    <!-- 字体 -->
+    <string name="notosanscjksc_medium">NotoSansCJKsc-Medium</string>
+    <string name="notosanscjksc_light">NotoSansCJKsc-Light</string>
+    <string name="notosanscjksc_thin">NotoSansCJKsc-Thin</string>
+
+    <!-- Password Dialog -->
+    <string name="pin_title">Enter password</string>
+    <string name="pin_tips">Please enter the PIN</string>
+    <string name="operation_tips">Enter a number(0~9)</string>
+</resources>
