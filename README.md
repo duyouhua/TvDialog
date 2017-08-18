@@ -10,9 +10,9 @@ Android TV Common Dialog Library
 
 - EditDialog--- AlertDialog with EditText
 
-- PasswordDialog -- Pin box for TV Parental Control and Program Lock
+- PasswordDialog --- Pin box for TV Parental Control and Program Lock
 
-- ToastDialog -- Toast with icon, also can be used as Tips Box
+- ToastDialog --- Toast with icon, also can be used as Tips Box
 
 ## Features
 
