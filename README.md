@@ -75,6 +75,18 @@ Step 2. Add the dependency
 	    <version>v1.0.1</version>
 	</dependency>
 
+Step 3. Add databinding support
+
+Add it in your module build.gradle
+
+	android {  
+	    ...  
+	    ...  
+	    ...  
+	    dataBinding{  
+		enabled true  
+	    }  
+	} 
 
 ## About me
 
