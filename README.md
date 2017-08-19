@@ -18,9 +18,14 @@ Android TV Common Dialog Library
 
 - Use DataBinding
 
--  For TV App
+- Use ConstraintLayout
+
+- Custom fonts
+
+- For TV App
 
 - Easy expansion
+
 
 
 ## ScreenRecord
